@@ -1,3 +1,4 @@
+import Header from './components/Header';
 import UserCard from './components/UserCard';
 import GameList from './components/GameList';
 import avatar from './avatar.png';
@@ -32,6 +33,7 @@ const user = {
 function App() {
   return (
     <div className="App">
+      <Header />
       <UserCard user={user} />
       <GameList title='Backlog' games={user.backlog} />
       <GameList title='Completed' games={user.beaten} />
