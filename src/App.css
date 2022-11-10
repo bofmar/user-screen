@@ -19,6 +19,31 @@ header {
   height: 5vh;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+input {
+  height: 1.8rem;
+  width: 50ch;
+  padding-left: 3ch;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #201f28;
+  color: white;
+
+}
+
+.links {
+  display: flex;
+  gap: 30px;
 }
 
 main {
@@ -81,7 +106,7 @@ main {
 .list-wrapper li {
   list-style: none;
   display: grid;
-  grid-template-columns: 320px auto;
+  grid-template-columns: 40ch auto;
 }
 
 footer {
