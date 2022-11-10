@@ -35,9 +35,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <UserCard user={user} />
-      <GameList title='Backlog' games={user.backlog} />
-      <GameList title='Completed' games={user.beaten} />
+      <main>
+        <UserCard user={user} />
+        <GameList title='Backlog' games={user.backlog} />
+        <GameList title='Completed' games={user.beaten} />
+      </main>
       <Footer />
     </div>
   );
