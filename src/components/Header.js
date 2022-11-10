@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <h1>Backlog.it</h1>
-      <input type='search' value='Search For Your Favorite Games...' />
+      <input type='search' placeholder='Search For Your Favorite Games...' />
       <a>Forum</a>
       <a>Stats</a>
       <a>Submit</a>
