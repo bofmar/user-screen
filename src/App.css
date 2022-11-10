@@ -17,8 +17,8 @@ header {
 }
 
 main {
-  height: 90vh;
-  padding-top: 30px;
+  height: 85vh;
+  padding-top: 50px;
   overflow: hidden;
   display: grid;
   justify-items: center;
@@ -66,6 +66,17 @@ main {
 #uid {
   grid-area: id;
   grid-column: span 1;
+}
+
+.list-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.list-wrapper li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 320px auto;
 }
 
 footer {

@@ -37,8 +37,10 @@ function App() {
       <Header />
       <main>
         <UserCard user={user} />
-        <GameList title='Backlog' games={user.backlog} />
-        <GameList title='Completed' games={user.beaten} />
+        <div className='list-wrapper'>
+          <GameList title='Backlog' games={user.backlog} />
+          <GameList title='Completed' games={user.beaten} />
+        </div>
       </main>
       <Footer />
     </div>
