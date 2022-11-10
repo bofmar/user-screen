@@ -12,10 +12,10 @@ export default class UserCard extends Component {
   render() {
     const { id, username, avatar, gamesBeaten, gamesInBacklog } = this.props.user;
     return (
-      <div>
+      <div className='user-card'>
         <img src={avatar} />
         <h1>{username.toUpperCase()}</h1>
-        <p>User ID: {id}</p>
+        <p id='uid'>User ID: {id}</p>
         <p>Games beaten: {gamesBeaten}</p>
         <p>Games in backlog: {gamesInBacklog}</p>
         <p>Total games: {gamesBeaten + gamesInBacklog}</p>

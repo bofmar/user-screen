@@ -18,7 +18,54 @@ header {
 
 main {
   height: 90vh;
+  padding-top: 30px;
   overflow: hidden;
+  display: grid;
+  justify-items: center;
+}
+
+.user-card {
+  height: 30vh;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-areas: 
+    'image name id'
+    'image rest rest'
+    'image rest rest'
+    'image rest rest'
+    'image rest rest'
+    ;
+  justify-content: center;
+  align-items: center;
+  justify-items: start;
+  gap: 0 50px;
+
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.user-card > * {
+  margin: 0;
+  padding: 0;
+}
+
+.user-card > img {
+  height: 240px;
+  grid-area: image;
+}
+
+.user-card > h1 {
+  grid-area: name;
+}
+
+.user-card > p {
+  grid-column: span 2;
+}
+
+#uid {
+  grid-area: id;
+  grid-column: span 1;
 }
 
 footer {
