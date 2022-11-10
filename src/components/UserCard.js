@@ -7,7 +7,6 @@ export default class UserCard extends Component {
 
   render() {
     const { id, username, avatar, gamesBeaten, gamesInBacklog } = this.props.user;
-    console.log(id);
     return (
       <div>
         <img src={avatar} />
