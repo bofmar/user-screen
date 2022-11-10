@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import UserCard from './components/UserCard';
 import GameList from './components/GameList';
+import Footer from './components/Footer';
 import avatar from './avatar.png';
 import './App.css';
 
@@ -37,6 +38,7 @@ function App() {
       <UserCard user={user} />
       <GameList title='Backlog' games={user.backlog} />
       <GameList title='Completed' games={user.beaten} />
+      <Footer />
     </div>
   );
 }
