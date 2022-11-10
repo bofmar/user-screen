@@ -1,9 +1,11 @@
+import UserCard from './components/UserCard';
+import avatar from './avatar.png';
 import './App.css';
 
 const user = {
   id: 12934,
   username: 'bofmar',
-  avatar: '', //TODO add avatar location
+  avatar: avatar,//TODO add avatar location
   gamesBeaten: 9,
   gamesInBacklog: 5,
   beaten: [
@@ -29,6 +31,7 @@ const user = {
 function App() {
   return (
     <div className="App">
+      <UserCard user={user} />
     </div>
   );
 }
