@@ -1,7 +1,12 @@
 body {
+  font-family: monospace;
   background-color: #282c34;
   height: 100vh;
   overflow: hidden;
+}
+
+a {
+  cursor: pointer;
 }
 
 .App {
@@ -81,4 +86,11 @@ main {
 
 footer {
   height: 5vh;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+footer img {
+  width: 50px;
 }

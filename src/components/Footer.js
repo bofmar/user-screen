@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
       <p>Created by Marios Mpofilakis</p>
-      <a><img src={image} /></a>
+      <a href='https://github.com/bofmar' target='_blank'><img src={image} /></a>
     </footer>
   );
 }
